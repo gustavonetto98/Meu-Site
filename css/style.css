@@ -1,0 +1,110 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Gradiente de fundo */
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+    line-height: 1.6;
+}
+
+/* Animação do fundo */
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid #00ff99; /* Linha de destaque verde neon */
+}
+
+header h1 {
+    color: #00ff99; /* Texto verde neon */
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff99; /* Cor do link em hover */
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+}
+
+/* Seções */
+.section {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Sombra verde neon */
+}
+
+.section h2 {
+    border-bottom: 2px solid #00ff99;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Cards de projeto */
+.project {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #00ff99;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.7);
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid #00ff99;
+}
+
+footer p {
+    margin: 0;
+}
